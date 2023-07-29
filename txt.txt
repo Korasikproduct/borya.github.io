@@ -1,20 +1,25 @@
-Collecting git+https://github.com/minerllabs/minerl
-  Cloning https://github.com/minerllabs/minerl to c:\users\vboxuser\appdata\local\temp\pip-req-build-x3d9cc0f
-  Running command git clone --filter=blob:none --quiet https://github.com/minerllabs/minerl 'C:\Users\vboxuser\AppData\Local\Temp\pip-req-build-x3d9cc0f'
-  Resolved https://github.com/minerllabs/minerl to commit c0c9baa03b5306ffc3acddc849ec4141b6deb98e
+(base) PS C:\Users\vboxuser> pip install MineRL
+Collecting MineRL
+  Downloading minerl-0.4.4.tar.gz (70.1 MB)
+     ---------------------------------------- 70.1/70.1 MB 724.6 kB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting gym<0.20,>=0.13.1 (from MineRL)
+  Downloading gym-0.19.0.tar.gz (1.6 MB)
+     ---------------------------------------- 1.6/1.6 MB 5.5 MB/s eta 0:00:00
   Preparing metadata (setup.py) ... error
   error: subprocess-exited-with-error
 
   × python setup.py egg_info did not run successfully.
   │ exit code: 1
-  ╰─> [1318 lines of output]
-      setup_mcp.sh: line 6: git: command not found
-      setup_mcp.sh: line 7: cd: MCP-Reborn: No such file or directory
-      setup_mcp.sh: line 8: git: command not found
-      setup_mcp.sh: line 10: ./gradlew: No such file or directory
-      patch_mcp.sh: line 5: cd: /tmp/pip-req-build-x3d9cc0f/scripts/../minerl/MCP-Reborn: No such file or directory
-      The text leading up to this was:
-      --------------------------
-      |diff -u1 -rN MCP-Reborn-vanilla/build.gradle MCP-Reborn/build.gradle
-      |--- MCP-Reborn-vanilla/build.gradle        2022-06-23 00:29:27.581515662 +0100
-      |+++ MCP-Reborn/build.gradle        2022-06-21 00:09:56.279206096 +0100
+  ╰─> [1 lines of output]
+      error in gym setup command: 'extras_require' must be a dictionary whose values are strings or lists of strings containing valid project/version requirement specifiers.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
