@@ -1,0 +1,20 @@
+Collecting git+https://github.com/minerllabs/minerl
+  Cloning https://github.com/minerllabs/minerl to c:\users\vboxuser\appdata\local\temp\pip-req-build-x3d9cc0f
+  Running command git clone --filter=blob:none --quiet https://github.com/minerllabs/minerl 'C:\Users\vboxuser\AppData\Local\Temp\pip-req-build-x3d9cc0f'
+  Resolved https://github.com/minerllabs/minerl to commit c0c9baa03b5306ffc3acddc849ec4141b6deb98e
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [1318 lines of output]
+      setup_mcp.sh: line 6: git: command not found
+      setup_mcp.sh: line 7: cd: MCP-Reborn: No such file or directory
+      setup_mcp.sh: line 8: git: command not found
+      setup_mcp.sh: line 10: ./gradlew: No such file or directory
+      patch_mcp.sh: line 5: cd: /tmp/pip-req-build-x3d9cc0f/scripts/../minerl/MCP-Reborn: No such file or directory
+      The text leading up to this was:
+      --------------------------
+      |diff -u1 -rN MCP-Reborn-vanilla/build.gradle MCP-Reborn/build.gradle
+      |--- MCP-Reborn-vanilla/build.gradle        2022-06-23 00:29:27.581515662 +0100
+      |+++ MCP-Reborn/build.gradle        2022-06-21 00:09:56.279206096 +0100
